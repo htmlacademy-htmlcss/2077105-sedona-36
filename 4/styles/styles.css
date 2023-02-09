@@ -1,0 +1,295 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.main-header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.navigation-link {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+.navigation-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.navigation-icon-img {
+    text-decoration: none;
+}
+.navigation-button {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: rgba(117, 97, 87, 1);
+}
+.main-index {
+    font-weight: 700;
+}
+.hero {
+    background-image: url("../images/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 485px;
+    text-align: center;
+}
+.info-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+.info-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.advantages-list {
+    text-align: center;
+}
+.advantages-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.advantages-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+.advantages-item-main {
+    color: #FFFFFF;
+    background-color: #82B3D3;
+}
+.advantages-item-square,
+.advantages-item-tourist {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item-road {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.2);
+}
+.invitation-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+}
+.invitation-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.services-list {
+    text-align: center;
+}
+.services-item {
+    color: #000000;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.services-item-food {
+    background-color: #FFFFFF;
+}
+.services-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.services-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
+.info-hotel {
+    text-align: center;
+}
+.info-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.info-hotel-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+.button-hotel {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.email {
+    text-align: center;
+    background-image: url("../images/background.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 415px;
+}
+.email-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.email-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+.subscribe-button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.inner-header-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
+.breadcrumbs-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+}
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.filter-container {
+    background-image: url("../images/catalog-background.jpg");
+    color: #FFFFFF;
+}
+.catalog-filter-list {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+.search-hotels {
+    font-family: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.select-control {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.catalog-filter-label-min,
+.catalog-filter-label-max {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+.button-filter {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.button-submit {
+    background-color: #82B3D3;
+}
+.product-card-title {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-decoration: none;
+}
+.product-card-name,
+.product-card-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+.button-detail {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(117, 97, 87, 1);
+    text-decoration: none;
+}
+.button-favorite {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-decoration: none;
+}
+.button-rang {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    background-color: #F2F2F2;
+}
+.pagination-current {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+.pagination-next {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #82B3D3;
+    text-decoration: none;
+}
+.email-catalog {
+    text-align: center;
+    color: #000000;
+}
