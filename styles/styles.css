@@ -85,16 +85,23 @@ body {
   flex-wrap: wrap;
 }
 
-.navigation-item {}
-
-.navigation-item-catalog {}
-
 .navigation-link {
   text-align: center;
   text-decoration: none;
   color: #000000;
   padding: 20px 16px;
   display: block;
+  position: relative;
+}
+
+.navigation-link-active::before {
+  content: "";
+  border-top: 2px solid #756257;
+  width: calc(100% - 32px);
+  height: 1px;
+  position: absolute;
+  bottom: -2px;
+  left: 16px;
 }
 
 .navigation-link:focus {
@@ -113,8 +120,6 @@ body {
   padding-left: 133px;
   gap: 1px;
 }
-
-.navigation-icon {}
 
 .navigation-icon-img {
   text-align: center;
@@ -168,6 +173,19 @@ body {
   cursor: pointer;
 }
 
+.navigation-button:hover {
+  background-color: #615048;
+}
+
+.navigation-button:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.navigation-button:active {
+  background-color: #756157;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -190,7 +208,7 @@ body {
 }
 
 .advantages {
-  padding-top: 72px;
+  padding-top: 70px;
 }
 
 .info-title {
@@ -266,6 +284,22 @@ body {
   text-transform: uppercase;
   width: 175px;
   margin: 0 auto 62px;
+  position: relative;
+}
+
+.advantages-title::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -32px;
+}
+
+.advantages-item-main .advantages-title::after {
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-description {
@@ -322,14 +356,14 @@ body {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 385px;
+
 }
 
 .services-item-home {
   background-image: url("../images/home.svg");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: 50% 27%;
+  background-position: 50% 80px;
   align-items: center;
 }
 
@@ -338,14 +372,14 @@ body {
   background-image: url("../images/food.svg");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: 50% 26%;
+  background-position: 50% 80px;
 }
 
 .services-item-souvenir {
   background-image: url("../images/souvenir.svg");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: 50% 26%;
+  background-position: 50% 77px;
 }
 
 .services-title {
@@ -354,7 +388,7 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 185px;
+  margin-top: 181px;
 }
 
 .services-description {
@@ -365,13 +399,14 @@ body {
   width: 230px;
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 81px;
 }
 
 .info-hotel {
   text-align: center;
   width: 592px;
   margin: 0 auto;
-  padding-bottom: 103px;
+  padding-bottom: 98px;
 }
 
 .info-hotel-title {
@@ -392,10 +427,11 @@ body {
   margin: 0;
   width: 592px;
   align-items: center;
-  margin-bottom: 59px;
+  margin-bottom: 53px;
 }
 
 .button-hotel {
+  display: inline-block;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -403,8 +439,21 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #756157;
-  padding: 13px 50px 14px 50px;
+  padding: 9px 50px 7px 50px;
   border-radius: 4px;
+}
+
+.button-hotel:hover {
+  background-color: #615048;
+}
+
+.button-hotel:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.button-hotel:active {
+  background-color: #756157;
 }
 
 .pafe-footer {
@@ -414,12 +463,13 @@ body {
 
 .email {
   text-align: center;
+  background-color: #74848f;
   background-image: url("../images/background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 415px;
   color: #ffffff;
+  padding-bottom: 103px;
 }
 
 .email-title {
@@ -429,7 +479,7 @@ body {
   text-transform: uppercase;
   padding: 0;
   margin: 0 auto;
-  padding-top: 95px;
+  padding-top: 97px;
   padding-bottom: 20px;
 }
 
@@ -439,27 +489,38 @@ body {
   line-height: 26px;
   width: 475px;
   margin: 0 auto;
-  padding-bottom: 2px;
+  padding: 0;
 }
 
 .subscribe-form {
   display: flex;
   flex-direction: row;
   width: 684px;
-  height: 52px;
   margin: 0 auto;
-  padding-top: 53px;
+  padding-top: 55px;
 }
 
 .field {
-  width: 434px;
+  width: 429px;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 24px;
-  padding-left: 21px;
+  padding-left: 18px;
   font-family: inherit;
   border-radius: 4px 0 0 4px;
-  border: none;
+  min-height: 45px;
+  background-color: #f2f2f2;
+  border: 3px solid transparent;
+}
+
+.field:hover {
+  background-color: #e6e6e6;
+}
+
+.field:focus {
+  background-color: #e6e6e6;
+  border-color: #83b3d3;
+  outline: none;
 }
 
 .subscribe-button {
@@ -470,10 +531,23 @@ body {
   background-color: #82b3d3;
   color: #ffffff;
   width: 232px;
-  height: 52px;
   border: none;
   border-radius: 0 4px 4px 0;
 }
+
+.subscribe-button:hover {
+  background-color: #68a2ca
+}
+
+.subscribe-button:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.subscribe-button:active {
+  background-color: #82b3d3;
+}
+
 
 .footer-social {
   display: grid;
@@ -497,14 +571,11 @@ body {
   flex-wrap: wrap;
 }
 
-.footer-social-item {
-  padding: 9px 16px 9px 11px;
-}
-
 .social-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 9px 16px 9px 11px;
 }
 
 .social-svg {
@@ -513,10 +584,6 @@ body {
 
 .social-button:hover .social-svg {
   fill: #68a2ca;
-}
-
-.social-button:focus {
-  outline: none;
 }
 
 .social-button:focus .social-svg {
