@@ -65,6 +65,10 @@ body {
   left: 70px;
 }
 
+.fav-icon:hover {
+  opacity: 0.6;
+}
+
 .logo {
   width: 140px;
   display: block;
@@ -94,6 +98,10 @@ body {
   position: relative;
 }
 
+.navigation-link:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .navigation-link-active::before {
   content: "";
   border-top: 2px solid #756257;
@@ -105,7 +113,6 @@ body {
 }
 
 .navigation-link:focus {
-  outline: none;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -129,6 +136,10 @@ body {
   padding: 22px 9px 13px 10px;
   margin: 0 auto;
   position: relative;
+}
+
+.navigation-icon-img:hover {
+  opacity: 0.3;
 }
 
 .favourite-number {
@@ -179,7 +190,6 @@ body {
 
 .navigation-button:focus {
   background-color: #615048;
-  outline: none;
 }
 
 .navigation-button:active {
@@ -449,7 +459,6 @@ body {
 
 .button-hotel:focus {
   background-color: #615048;
-  outline: none;
 }
 
 .button-hotel:active {
@@ -541,7 +550,6 @@ body {
 
 .subscribe-button:focus {
   background-color: #68a2ca;
-  outline: none;
 }
 
 .subscribe-button:active {
